@@ -1,0 +1,69 @@
+/*
+Name: Mohammad Taaha
+91.61 Assignment:  Implementing a Bit of Scrabble with Drag and Drop
+Mohammad Taaha, UMass Lowell Computer Science Student,mohammad_taaha@student.uml.edu
+Copyright (c) 2018 by Mohammad Taaha.  All rights reserved.  May be
+freely copied or excerpted for educational purposes with credit to the
+author.
+Created on 12/15/2018
+Description:In this webpage, I have implemented a single line scrabble board. The user can drag tiles from the rack to
+single link board. When the user inserts it in the double tiles, it doubles the score. The score is updated as the user
+drags the tiles from the rack onto the board. There is also a reset button that resets all the rack tiles in case the user
+is stuck. The user can press the reset button multiplie times and it will reset the rack and board. If the user tries to
+drag the tile of the board, the tile will just back to the rack.
+*/
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	color: Blue;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	font-size: 2.6em;
+	text-align: center;
+	margin-left: 350px;
+}
+
+td {
+	background-image: url("img/blankTile.JPG");
+	height: 85px;
+	padding: 1px;
+	width: 75px;
+	border-style: solid;
+	border-color: black;
+}
+
+.doubleWord {
+	background-image: url("img/doubleWord.JPG");
+}
+
+.doubleLetter {
+	background-image: url("img/doubleLetter.JPG");
+}
+
+#rack_line {
+	background-image: url("img/wood.jpg");
+	width: 880px;
+	height: 150px;
+}
+
+#rack {
+	background-image: url("img/tile_rack.png");
+	height: 120px;
+	margin-top: 15px;
+	margin-left: 350px;
+	margin-right: auto;
+	text-align: center;
+}
+
+#score {
+	text-align: center;
+}
+
+button {
+	background-color: Blue;
+	color: white;
+	font-size: 25px;
+}
