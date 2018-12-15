@@ -36,15 +36,15 @@ td {
 }
 
 .doubleWord {
-	background-image: url("img/doubleWord.jpg");
+	background-image: url("img/doubleWord.JPG");
 }
 
 .doubleLetter {
-	background-image: url("img/doubleLetter.jpg");
+	background-image: url("img/doubleLetter.JPG");
 }
 
 #rack_line {
-	background-image: url("img/wood.jpg");
+	background-image: url("img/wood.JPG");
 	width: 880px;
 	height: 150px;
 }
