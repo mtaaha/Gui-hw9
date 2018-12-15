@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+   Name: Mohammad Taaha
+   91.61 Assignment:  Implementing a Bit of Scrabble with Drag and Drop
+   Mohammad Taaha, UMass Lowell Computer Science Student,mohammad_taaha@student.uml.edu
+   Copyright (c) 2018 by Mohammad Taaha.  All rights reserved.  May be
+   freely copied or excerpted for educational purposes with credit to the
+   author.
+   Created on 12/15/2018
+   Description:In this webpage, I have implemented a single line scrabble board. The user can drag tiles from the rack to
+   single link board. When the user inserts it in the double tiles, it doubles the score. The score is updated as the user
+   drags the tiles from the rack onto the board. There is also a reset button that resets all the rack tiles in case the user
+   is stuck. The user can press the reset button multiplie times and it will reset the rack and board. If the user tries to
+   drag the tile of the board, the tile will just back to the rack.
+
+      -->
+<html lang="en-US">
+   <head>
+      <title>Scrabble</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link href="css/assignment9.css" type="text/css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="intro" class="container-fluid row">
+      </div>
+      <div class="col-md-12">
+         <!-- Display score -->
+         <div id="score" class="col-md-6">
+            <p><strong>Score:</strong> 0</p>
+         </div>
+         <div id="buttons" class="col-md-6">
+            <button onclick="reset()">Reset</button>
+         </div>
+      </div>
+      </div>
+      <div class="board-overlay container-fluid row">
+         <div id="rack_line" class="col-md-6 col-md-offset-1">
+            <!-- Display single line board -->
+            <table id="scrabble">
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <td class="doubleWord"></td>
+                  <td></td>
+                  <td></td>
+                  <td class="doubleLetter"></td>
+                  <td></td>
+                  <td></td>
+                  <td class="doubleWord"></td>
+                  <td></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="rack" class="col-md-3"></div>
+      <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+      <script src="js/assignment9.js"></script>
+   </body>
+</html>
